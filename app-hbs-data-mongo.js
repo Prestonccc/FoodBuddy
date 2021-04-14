@@ -10,6 +10,7 @@ const mongodb = require('mongodb')
 const MongoClient = mongodb.MongoClient
 const connectionURL = 'mongodb://127.0.0.1:27017'
 const databaseName = 'FoodBuddy'
+const port = process.env.PORT || 8080
 
 app.engine('hbs', exphbs({
 	defaultlayout: 'main',
@@ -62,6 +63,6 @@ app.all('*', (req, res) => {  // 'default' route to catch user errors
 	res.status(404).render('404')
 })
 
-app.listen(8080, () => {
+app.listen(port, () => {
 	console.log('Food Buddy server listening for requests ...')
 })
