@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node app-hbs-data-mongo.js"
+    "start": "node src/app-hbs-data-mongo.js"
   },
   "keywords": [],
   "author": "",
