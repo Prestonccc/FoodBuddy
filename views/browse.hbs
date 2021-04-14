@@ -1,0 +1,12 @@
+<h1> Home page </h1>
+<p> User can browse a list of foods </p>
+<ul>
+
+    {{#each foods}}
+
+    <li> <a href="/food/{{this.id}}">{{this.name}}</a> </li>
+
+    {{/each}}
+    
+</ul>
+<a href="/filter"> Set your food filter </a>
